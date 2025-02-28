@@ -6,6 +6,7 @@ import Hero from "./Hero.jsx";
 const HomePage = () => {
   return (
     <>
+        
       <SignedIn>
         <Home />
       </SignedIn>

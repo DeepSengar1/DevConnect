@@ -160,7 +160,7 @@ function EditorPage () {
             {/* Chatbot Button */}
             <button
               className='btn btn-info w-100'
-              onClick={openChatbot} // Handle chatbot button click
+              // onClick={openChatbot} 
             >
               Open Chatbot
             </button>
