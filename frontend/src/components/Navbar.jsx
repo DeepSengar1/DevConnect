@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <nav className="navbar navbar-expand-lg bg-transparent text-light border-bottom border-gray-700">
       <div className="container-fluid d-flex justify-content-between align-items-center">
-        <Link className="navbar-brand fw-bold" to="/">
+        <Link className="navbar-brand fw-bold text-light" to="/">
           DEV CONNECT
         </Link>
         <button
@@ -22,10 +22,10 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto d-flex align-items-center">
+          <ul className="navbar-nav ms-auto d-flex align-items-center gap-3">
             <SignedIn>
-              <li className="nav-item rounded-full border-2 ml-4">
-                <Link className="nav-link" to="/create-room">
+              <li className="nav-item">
+                <Link className="nav-link text-light" to="/create-room">
                   Create New Room
                 </Link>
               </li>
@@ -35,7 +35,7 @@ const Navbar = () => {
             </SignedIn>
             <SignedOut>
               <li className="nav-item">
-                <Link className="nav-link" to="/auth">
+                <Link className="nav-link text-light" to="/auth">
                   Login
                 </Link>
               </li>
