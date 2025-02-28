@@ -99,15 +99,15 @@ function Home() {
             transition: background-color 0.3s;
           }
           .joinButton:hover {
-            background-color:rgb(204, 57, 57);
+            background-color: #059669; /* Darker green on hover */
           }
 
           /* Create New Room button styling */
           .createRoomButton {
-            width: 100%;
+            width: auto;
             background-color: transparent;
-            border: 1px solid #e63e3e;
-            color: #e63e3e;
+            border: 1px solid #34D399; /* Green border */
+            color: #34D399;
             font-weight: bold;
             padding: 0.5rem 1rem;
             border-radius: 0.25rem;
@@ -115,7 +115,7 @@ function Home() {
             transition: background-color 0.3s, color 0.3s;
           }
           .createRoomButton:hover {
-            background-color:rgb(206, 55, 55);
+            background-color: #34D399;
             color: white;
           }
 
@@ -165,15 +165,15 @@ function Home() {
             JOIN
           </button>
 
-          <p className="paragraph">Don’t have a room ID?</p>
-
+          <br/>
+          <br/>
           <motion.button
             onClick={generateRoomId}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="createRoomButton"
           >
-            Create New Room
+            Create your own room
           </motion.button>
         </motion.div>
 
